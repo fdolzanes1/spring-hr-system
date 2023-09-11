@@ -23,7 +23,7 @@ public class HrUserApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		userRepository.saveAll(List.of(new User(null, "fabiano dolzanes", "fabiano@mail.com", "123456", 20.0)));
+		userRepository.saveAll(List.of(new User(null, "fabiano dolzanes", "fabiano@mail.com", "123456", 33.0)));
 		
 	}
 
