@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.dolzanes.domain.entity.User;
 
-@FeignClient(name="hr-user-api", url="http://localhost:8000")
+@FeignClient(name="hr-user-api")
 public interface UserFeign {
 	
 	@GetMapping(value="/api/users/{id}")
