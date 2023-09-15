@@ -24,6 +24,8 @@ public class UserService implements IUserService {
 	public User findById(Long id) {
 		log.info("USER_SERVICE ::: Get Request on "+ env.getProperty("local.server.port")+" port.");
 		return userRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException("Object Not Found"));
+
+
 	}
 
 	@Override
